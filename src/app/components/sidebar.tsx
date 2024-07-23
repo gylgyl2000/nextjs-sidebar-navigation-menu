@@ -4,6 +4,7 @@ import { useState } from "react"
 import { PowerIcon } from '@heroicons/react/24/solid'
 import Image from 'next/image'
 import SidebarItem from "./sidebarItem"
+import Icon from '@/app/icon/apple.svg'
 
 export default function Sidebar() {
     const [click, setClick] = useState(false)
@@ -32,7 +33,7 @@ export default function Sidebar() {
                 >
                 <div id="logo" className="w-10">
                     <Image
-                        src="/apple.svg"
+                        src={Icon}
                         width={100}
                         height={100}
                         alt="Logo"
